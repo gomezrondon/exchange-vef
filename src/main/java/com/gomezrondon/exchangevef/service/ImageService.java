@@ -54,26 +54,28 @@ public class ImageService {
      * @param imageName image name
      * @param newName name of the copy scaled.
      */
-    public static void scaleImage(String imageName, String newName) {
+/*    public static void scaleImage(String imageName, String newName) {
         BufferedImage img = getBufferedImage(imageName);
         int width = (int) (img.getWidth() * 1.5);
         int height = (int) (img.getHeight() * 1.5);
         BufferedImage scaledImage = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
         scaledImage.getGraphics().drawImage(img, 0, 0, width, height, null);
         saveBufferdImage(newName, scaledImage);
-    }
+    }*/
 
     /***
      * convert an image to grayscale
      * @param imageName image name
      * @param newName name of the copy gray.
      */
+/*
     public static void toGrayScale(String imageName, String newName) {
         BufferedImage img = getBufferedImage(imageName);
         BufferedImage grayScaleImage = new BufferedImage(img.getWidth(), img.getHeight(), BufferedImage.TYPE_BYTE_GRAY);
         grayScaleImage.getGraphics().drawImage(img, 0, 0, null);
         saveBufferdImage(newName, grayScaleImage);
     }
+*/
 
 
     /***

@@ -17,16 +17,14 @@ import java.io.File;
 import java.io.IOException;
 import java.time.LocalDateTime;
 import java.util.Arrays;
-import java.util.Optional;
 import java.util.UUID;
-import java.util.function.Function;
 import java.util.function.Supplier;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import java.util.stream.Collectors;
-
 import static com.gomezrondon.exchangevef.service.ImageService.downloadImage;
 import static com.gomezrondon.exchangevef.service.ImageService.getImageFromXPath;
-import static com.gomezrondon.exchangevef.service.ImageService.scaleImage;
-import static com.gomezrondon.exchangevef.service.ImageService.toGrayScale;
+
 
 @SpringBootApplication
 public class Application {
@@ -65,8 +63,8 @@ public class Application {
 	public Supplier<String> getBsFDolarToday() {
 		return () -> {
 			downloadImage("https://dolartoday.com/custom/rate2.jpg");
-			scaleImage("./images/image.jpg", "./images/image.jpg");
-			toGrayScale("./images/image.jpg", "./images/image.jpg");
+//			scaleImage("./images/image.jpg", "./images/image.jpg");
+//			toGrayScale("./images/image.jpg", "./images/image.jpg");
 
 			HttpHeaders headers = new HttpHeaders();
 			headers.setContentType(MediaType.MULTIPART_FORM_DATA);
@@ -83,13 +81,26 @@ public class Application {
 			RestTemplate restTemplate = new RestTemplate();
 			ResponseEntity<String> response = restTemplate.postForEntity(ocrServiceUrl, requestEntity, String.class);
 
-			String tasaBsF = Arrays.stream(response.getBody().split("\n"))
-					.filter(x -> x.contains("DOLARTODAY"))
-					.findFirst()
-					.map(x -> x.split(" ")[2])
-					.map(x -> x.replace(",", ".")).orElse("N/A");
+			String regex = "\\*DOLARTODAY.*?[\\d]{0,}[,|.][\\d]{2}";
+			final Pattern pattern = Pattern.compile(regex, Pattern.MULTILINE);
 
-			return tasaBsF ;
+
+			String tasaBsF = Arrays.stream(response.getBody().split("\n"))
+					.map(String::trim)
+					.filter(x -> !x.isEmpty())
+					.map(line -> {
+						final Matcher matcher = pattern.matcher(line);
+						if (matcher.find()) {
+							return matcher.group(0);
+						}
+						return "";
+					})
+					.filter(x -> !x.isEmpty())
+					.map(x -> x.split(" ")[2])
+					.map(x -> x.replace(",", "."))
+					.collect(Collectors.joining());
+
+			return tasaBsF;
 		};
 	}
 

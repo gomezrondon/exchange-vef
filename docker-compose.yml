@@ -1,0 +1,7 @@
+version: '2.1'
+
+services:
+  react-app:
+    image: exchange-vef:0.0.1-SNAPSHOT
+    ports:
+      - 8080:8080

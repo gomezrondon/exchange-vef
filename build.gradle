@@ -1,0 +1,44 @@
+plugins {
+	id 'org.springframework.boot' version '2.6.6'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'java'
+	id 'org.springframework.experimental.aot' version '0.11.4'
+}
+
+group = 'com.gomezrondon'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+repositories {
+	maven { url 'https://repo.spring.io/release' }
+	mavenCentral()
+}
+
+ext {
+	set('springCloudVersion', "2021.0.1")
+}
+
+dependencies {
+//	implementation 'com.google.cloud:spring-cloud-gcp-starter-vision:3.2.1'
+
+	implementation 'org.jsoup:jsoup:1.14.3'
+	implementation 'org.springframework.boot:spring-boot-starter'
+//	implementation 'org.springframework.cloud:spring-cloud-function-context'
+	implementation 'org.springframework.cloud:spring-cloud-starter-function-web'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+dependencyManagement {
+	imports {
+		mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+	}
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
+
+tasks.named('bootBuildImage') {
+	builder = 'paketobuildpacks/builder:tiny'
+	environment = ['BP_NATIVE_IMAGE': 'true']
+}

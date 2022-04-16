@@ -8,21 +8,34 @@ import java.net.URL;
 
 public class ImageService {
 
+    /***
+     * Download an Image from a webpage and save it to a file
+     * @param url where the image is hosted
+     */
     public static void downloadImage(String url) {
         File theDir = new File("./images");
         if (!theDir.exists()){
             theDir.mkdirs();
         }
 
+        BufferedImage image = null;
         try {
             URL imageUrl = new URL(url);
-            BufferedImage image = ImageIO.read(imageUrl);
-            ImageIO.write(image, "jpg", new File("./images/image.jpg"));
+            image = ImageIO.read(imageUrl);
         } catch (IOException e) {
-            e.printStackTrace();
+            throw new RuntimeException(e);
         }
+
+        saveBufferdImage("./images/image.jpg", image);
+
     }
 
+    /***
+     * returns the value in specific location of a webpage.
+     * @param url web page url
+     * @param xpath location of the value
+     * @return value
+     */
     public static String getImageFromXPath(String url, String xpath) {
         String result = "";
         try {
@@ -36,6 +49,11 @@ public class ImageService {
     }
 
 
+    /***
+     * Scale an image
+     * @param imageName image name
+     * @param newName name of the copy scaled.
+     */
     public static void scaleImage(String imageName, String newName) {
         BufferedImage img = getBufferedImage(imageName);
         int width = (int) (img.getWidth() * 1.5);
@@ -45,7 +63,11 @@ public class ImageService {
         saveBufferdImage(newName, scaledImage);
     }
 
-    //create a method that convert image to gray scale
+    /***
+     * convert an image to grayscale
+     * @param imageName image name
+     * @param newName name of the copy gray.
+     */
     public static void toGrayScale(String imageName, String newName) {
         BufferedImage img = getBufferedImage(imageName);
         BufferedImage grayScaleImage = new BufferedImage(img.getWidth(), img.getHeight(), BufferedImage.TYPE_BYTE_GRAY);
@@ -54,6 +76,11 @@ public class ImageService {
     }
 
 
+    /***
+     * convert a image to BufferedImage
+     * @param imageName file name
+     * @return BufferedImage of the file
+     */
     private static BufferedImage getBufferedImage(String imageName) {
         BufferedImage img = null;
         try {
@@ -64,9 +91,15 @@ public class ImageService {
         return img;
     }
 
-    private static void saveBufferdImage(String newName, BufferedImage scaledImage) {
+
+    /***
+     * save a BufferedImage to file image
+     * @param newName file name
+     * @param img is BufferedImage to be saved to file as a jpg
+     */
+    private static void saveBufferdImage(String newName, BufferedImage img) {
         try {
-            ImageIO.write(scaledImage, "jpg", new File(newName));
+            ImageIO.write(img, "jpg", new File(newName));
         } catch (IOException e) {
             e.printStackTrace();
         }

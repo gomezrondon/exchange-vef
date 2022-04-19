@@ -1,0 +1,2 @@
+docker tag [APP_NAME]:0.0.1-SNAPSHOT gcr.io/[PROJECT-ID]/[APP_NAME]:v[APP_VERSION]
+docker push gcr.io/[PROJECT-ID]/[APP_NAME]:v[APP_VERSION]

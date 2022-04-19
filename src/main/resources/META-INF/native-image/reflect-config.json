@@ -152,14 +152,12 @@
   "allDeclaredConstructors":true,
   "allDeclaredClasses":true,
   "methods":[
-    {"name":"downloadImage","parameterTypes":["java.lang.String"] }, 
-    {"name":"getTestFile","parameterTypes":[] }, 
-    {"name":"getXPath","parameterTypes":["java.lang.String","java.lang.String"] }, 
-    {"name":"main","parameterTypes":["java.lang.String[]"] }
+    {"name":"main","parameterTypes":["java.lang.String[]"] }, 
+    {"name":"upload","parameterTypes":["java.lang.String","java.lang.String","java.lang.String"] }
   ]
 },
 {
-  "name":"com.gomezrondon.exchangevef.Application$$EnhancerBySpringCGLIB$$f57f621b",
+  "name":"com.gomezrondon.exchangevef.Application$$EnhancerBySpringCGLIB$$7a610678",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allDeclaredConstructors":true,
@@ -167,12 +165,11 @@
   "methods":[
     {"name":"getBsF","parameterTypes":[] }, 
     {"name":"getBsFDolarToday","parameterTypes":[] }, 
-    {"name":"getTime","parameterTypes":[] }, 
-    {"name":"uppercase","parameterTypes":[] }
+    {"name":"getTime","parameterTypes":[] }
   ]
 },
 {
-  "name":"com.gomezrondon.exchangevef.Application$$EnhancerBySpringCGLIB$$f57f621b$$FastClassBySpringCGLIB$$e4fc4ebd",
+  "name":"com.gomezrondon.exchangevef.Application$$EnhancerBySpringCGLIB$$7a610678$$FastClassBySpringCGLIB$$e594dffe",
   "methods":[{"name":"<init>","parameterTypes":["java.lang.Class"] }]
 },
 {
@@ -180,28 +177,331 @@
   "methods":[{"name":"<init>","parameterTypes":["java.lang.Class"] }]
 },
 {
-  "name":"com.gomezrondon.exchangevef.Application$$Lambda$552/0x0000000800f24ac8",
-  "allDeclaredFields":true,
-  "allDeclaredMethods":true,
-  "methods":[{"name":"apply","parameterTypes":["java.lang.Object"] }]
-},
-{
-  "name":"com.gomezrondon.exchangevef.Application$$Lambda$553/0x0000000800f24d00",
+  "name":"com.gomezrondon.exchangevef.Application$$Lambda$567/0x0000000800f73030",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "methods":[{"name":"get","parameterTypes":[] }]
 },
 {
-  "name":"com.gomezrondon.exchangevef.Application$$Lambda$554/0x0000000800f24f18",
+  "name":"com.gomezrondon.exchangevef.Application$$Lambda$568/0x0000000800f73248",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "methods":[{"name":"get","parameterTypes":[] }]
 },
 {
-  "name":"com.gomezrondon.exchangevef.Application$$Lambda$555/0x0000000800f25130",
+  "name":"com.gomezrondon.exchangevef.Application$$Lambda$569/0x0000000800f73460",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "methods":[{"name":"get","parameterTypes":[] }]
+},
+{
+  "name":"com.google.api.client.googleapis.services.AbstractGoogleClientRequest",
+  "allDeclaredFields":true
+},
+{
+  "name":"com.google.api.client.googleapis.services.json.AbstractGoogleJsonClientRequest",
+  "allDeclaredFields":true
+},
+{
+  "name":"com.google.api.client.http.GenericUrl",
+  "allDeclaredFields":true
+},
+{
+  "name":"com.google.api.client.http.HttpHeaders",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true
+},
+{
+  "name":"com.google.api.client.json.GenericJson",
+  "allDeclaredFields":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"com.google.api.client.json.webtoken.JsonWebSignature$Header",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true
+},
+{
+  "name":"com.google.api.client.json.webtoken.JsonWebToken$Header",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true
+},
+{
+  "name":"com.google.api.client.json.webtoken.JsonWebToken$Payload",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true
+},
+{
+  "name":"com.google.api.client.util.GenericData",
+  "allDeclaredFields":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"com.google.api.core.BetaApi",
+  "allDeclaredMethods":true
+},
+{
+  "name":"com.google.api.core.InternalExtensionOnly",
+  "allDeclaredMethods":true
+},
+{
+  "name":"com.google.api.gax.core.CredentialsProvider",
+  "allDeclaredMethods":true,
+  "allPublicMethods":true
+},
+{
+  "name":"com.google.api.services.storage.Storage$Objects$Insert",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true
+},
+{
+  "name":"com.google.api.services.storage.StorageRequest",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true
+},
+{
+  "name":"com.google.api.services.storage.model.ObjectAccessControl",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"com.google.api.services.storage.model.ObjectAccessControl$ProjectTeam",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"com.google.api.services.storage.model.StorageObject",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"com.google.api.services.storage.model.StorageObject$Owner",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"com.google.cloud.BaseService",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true,
+  "methods":[{"name":"getOptions","parameterTypes":[] }]
+},
+{
+  "name":"com.google.cloud.Service",
+  "allDeclaredMethods":true,
+  "allPublicMethods":true
+},
+{
+  "name":"com.google.cloud.spring.autoconfigure.core.GcpContextAutoConfiguration",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true,
+  "allDeclaredConstructors":true
+},
+{
+  "name":"com.google.cloud.spring.autoconfigure.core.GcpProperties",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true,
+  "allDeclaredConstructors":true,
+  "methods":[{"name":"getCredentials","parameterTypes":[] }]
+},
+{
+  "name":"com.google.cloud.spring.autoconfigure.secretmanager.GcpSecretManagerEnvironmentPostProcessor",
+  "allDeclaredConstructors":true
+},
+{
+  "name":"com.google.cloud.spring.autoconfigure.sql.CloudSqlEnvironmentPostProcessor",
+  "allDeclaredConstructors":true
+},
+{
+  "name":"com.google.cloud.spring.autoconfigure.sql.R2dbcCloudSqlEnvironmentPostProcessor",
+  "allDeclaredConstructors":true
+},
+{
+  "name":"com.google.cloud.spring.autoconfigure.storage.GcpStorageAutoConfiguration",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true,
+  "allDeclaredConstructors":true
+},
+{
+  "name":"com.google.cloud.spring.autoconfigure.storage.GcpStorageProperties",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true,
+  "allDeclaredConstructors":true,
+  "methods":[{"name":"getCredentials","parameterTypes":[] }]
+},
+{
+  "name":"com.google.cloud.spring.core.Credentials",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true,
+  "allDeclaredConstructors":true
+},
+{
+  "name":"com.google.cloud.spring.core.CredentialsSupplier",
+  "allDeclaredMethods":true,
+  "allPublicMethods":true
+},
+{
+  "name":"com.google.cloud.spring.core.DefaultCredentialsProvider",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true,
+  "methods":[{"name":"getCredentials","parameterTypes":[] }]
+},
+{
+  "name":"com.google.cloud.spring.core.DefaultGcpEnvironmentProvider",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true,
+  "methods":[{"name":"getCurrentEnvironment","parameterTypes":[] }]
+},
+{
+  "name":"com.google.cloud.spring.core.DefaultGcpProjectIdProvider",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true,
+  "methods":[{"name":"getProjectId","parameterTypes":[] }]
+},
+{
+  "name":"com.google.cloud.spring.core.GcpEnvironmentProvider",
+  "allDeclaredMethods":true,
+  "allPublicMethods":true
+},
+{
+  "name":"com.google.cloud.spring.core.GcpProjectIdProvider",
+  "allDeclaredMethods":true,
+  "allPublicMethods":true
+},
+{
+  "name":"com.google.cloud.spring.storage.GoogleStorageProtocolResolver",
+  "allDeclaredMethods":true,
+  "methods":[
+    {"name":"<init>","parameterTypes":[] }, 
+    {"name":"postProcessBeanFactory","parameterTypes":["org.springframework.beans.factory.config.ConfigurableListableBeanFactory"] }, 
+    {"name":"resolve","parameterTypes":["java.lang.String","org.springframework.core.io.ResourceLoader"] }, 
+    {"name":"setResourceLoader","parameterTypes":["org.springframework.core.io.ResourceLoader"] }
+  ]
+},
+{
+  "name":"com.google.cloud.spring.storage.GoogleStorageProtocolResolverSettings",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true,
+  "methods":[
+    {"name":"isAutoCreateFiles","parameterTypes":[] }, 
+    {"name":"setAutoCreateFiles","parameterTypes":["boolean"] }
+  ]
+},
+{
+  "name":"com.google.cloud.storage.Storage",
+  "allDeclaredMethods":true,
+  "allPublicMethods":true
+},
+{
+  "name":"com.google.cloud.storage.StorageImpl",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true,
+  "methods":[
+    {"name":"batch","parameterTypes":[] }, 
+    {"name":"compose","parameterTypes":["com.google.cloud.storage.Storage$ComposeRequest"] }, 
+    {"name":"copy","parameterTypes":["com.google.cloud.storage.Storage$CopyRequest"] }, 
+    {"name":"create","parameterTypes":["com.google.cloud.storage.BlobInfo","java.io.InputStream","com.google.cloud.storage.Storage$BlobWriteOption[]"] }, 
+    {"name":"create","parameterTypes":["com.google.cloud.storage.BlobInfo","byte[]","int","int","com.google.cloud.storage.Storage$BlobTargetOption[]"] }, 
+    {"name":"create","parameterTypes":["com.google.cloud.storage.BlobInfo","byte[]","com.google.cloud.storage.Storage$BlobTargetOption[]"] }, 
+    {"name":"create","parameterTypes":["com.google.cloud.storage.BlobInfo","com.google.cloud.storage.Storage$BlobTargetOption[]"] }, 
+    {"name":"create","parameterTypes":["com.google.cloud.storage.BucketInfo","com.google.cloud.storage.Storage$BucketTargetOption[]"] }, 
+    {"name":"createAcl","parameterTypes":["com.google.cloud.storage.BlobId","com.google.cloud.storage.Acl"] }, 
+    {"name":"createAcl","parameterTypes":["java.lang.String","com.google.cloud.storage.Acl"] }, 
+    {"name":"createAcl","parameterTypes":["java.lang.String","com.google.cloud.storage.Acl","com.google.cloud.storage.Storage$BucketSourceOption[]"] }, 
+    {"name":"createDefaultAcl","parameterTypes":["java.lang.String","com.google.cloud.storage.Acl"] }, 
+    {"name":"createFrom","parameterTypes":["com.google.cloud.storage.BlobInfo","java.io.InputStream","int","com.google.cloud.storage.Storage$BlobWriteOption[]"] }, 
+    {"name":"createFrom","parameterTypes":["com.google.cloud.storage.BlobInfo","java.io.InputStream","com.google.cloud.storage.Storage$BlobWriteOption[]"] }, 
+    {"name":"createFrom","parameterTypes":["com.google.cloud.storage.BlobInfo","java.nio.file.Path","int","com.google.cloud.storage.Storage$BlobWriteOption[]"] }, 
+    {"name":"createFrom","parameterTypes":["com.google.cloud.storage.BlobInfo","java.nio.file.Path","com.google.cloud.storage.Storage$BlobWriteOption[]"] }, 
+    {"name":"createHmacKey","parameterTypes":["com.google.cloud.storage.ServiceAccount","com.google.cloud.storage.Storage$CreateHmacKeyOption[]"] }, 
+    {"name":"createNotification","parameterTypes":["java.lang.String","com.google.cloud.storage.NotificationInfo"] }, 
+    {"name":"delete","parameterTypes":["com.google.cloud.storage.BlobId"] }, 
+    {"name":"delete","parameterTypes":["com.google.cloud.storage.BlobId","com.google.cloud.storage.Storage$BlobSourceOption[]"] }, 
+    {"name":"delete","parameterTypes":["java.lang.Iterable"] }, 
+    {"name":"delete","parameterTypes":["java.lang.String","java.lang.String","com.google.cloud.storage.Storage$BlobSourceOption[]"] }, 
+    {"name":"delete","parameterTypes":["java.lang.String","com.google.cloud.storage.Storage$BucketSourceOption[]"] }, 
+    {"name":"delete","parameterTypes":["com.google.cloud.storage.BlobId[]"] }, 
+    {"name":"deleteAcl","parameterTypes":["com.google.cloud.storage.BlobId","com.google.cloud.storage.Acl$Entity"] }, 
+    {"name":"deleteAcl","parameterTypes":["java.lang.String","com.google.cloud.storage.Acl$Entity"] }, 
+    {"name":"deleteAcl","parameterTypes":["java.lang.String","com.google.cloud.storage.Acl$Entity","com.google.cloud.storage.Storage$BucketSourceOption[]"] }, 
+    {"name":"deleteDefaultAcl","parameterTypes":["java.lang.String","com.google.cloud.storage.Acl$Entity"] }, 
+    {"name":"deleteHmacKey","parameterTypes":["com.google.cloud.storage.HmacKey$HmacKeyMetadata","com.google.cloud.storage.Storage$DeleteHmacKeyOption[]"] }, 
+    {"name":"deleteNotification","parameterTypes":["java.lang.String","java.lang.String"] }, 
+    {"name":"generateSignedPostPolicyV4","parameterTypes":["com.google.cloud.storage.BlobInfo","long","java.util.concurrent.TimeUnit","com.google.cloud.storage.PostPolicyV4$PostConditionsV4","com.google.cloud.storage.Storage$PostPolicyV4Option[]"] }, 
+    {"name":"generateSignedPostPolicyV4","parameterTypes":["com.google.cloud.storage.BlobInfo","long","java.util.concurrent.TimeUnit","com.google.cloud.storage.PostPolicyV4$PostFieldsV4","com.google.cloud.storage.PostPolicyV4$PostConditionsV4","com.google.cloud.storage.Storage$PostPolicyV4Option[]"] }, 
+    {"name":"generateSignedPostPolicyV4","parameterTypes":["com.google.cloud.storage.BlobInfo","long","java.util.concurrent.TimeUnit","com.google.cloud.storage.PostPolicyV4$PostFieldsV4","com.google.cloud.storage.Storage$PostPolicyV4Option[]"] }, 
+    {"name":"generateSignedPostPolicyV4","parameterTypes":["com.google.cloud.storage.BlobInfo","long","java.util.concurrent.TimeUnit","com.google.cloud.storage.Storage$PostPolicyV4Option[]"] }, 
+    {"name":"get","parameterTypes":["com.google.cloud.storage.BlobId"] }, 
+    {"name":"get","parameterTypes":["com.google.cloud.storage.BlobId","com.google.cloud.storage.Storage$BlobGetOption[]"] }, 
+    {"name":"get","parameterTypes":["java.lang.Iterable"] }, 
+    {"name":"get","parameterTypes":["java.lang.String","java.lang.String","com.google.cloud.storage.Storage$BlobGetOption[]"] }, 
+    {"name":"get","parameterTypes":["java.lang.String","com.google.cloud.storage.Storage$BucketGetOption[]"] }, 
+    {"name":"get","parameterTypes":["com.google.cloud.storage.BlobId[]"] }, 
+    {"name":"getAcl","parameterTypes":["com.google.cloud.storage.BlobId","com.google.cloud.storage.Acl$Entity"] }, 
+    {"name":"getAcl","parameterTypes":["java.lang.String","com.google.cloud.storage.Acl$Entity"] }, 
+    {"name":"getAcl","parameterTypes":["java.lang.String","com.google.cloud.storage.Acl$Entity","com.google.cloud.storage.Storage$BucketSourceOption[]"] }, 
+    {"name":"getDefaultAcl","parameterTypes":["java.lang.String","com.google.cloud.storage.Acl$Entity"] }, 
+    {"name":"getHmacKey","parameterTypes":["java.lang.String","com.google.cloud.storage.Storage$GetHmacKeyOption[]"] }, 
+    {"name":"getIamPolicy","parameterTypes":["java.lang.String","com.google.cloud.storage.Storage$BucketSourceOption[]"] }, 
+    {"name":"getNotification","parameterTypes":["java.lang.String","java.lang.String"] }, 
+    {"name":"getServiceAccount","parameterTypes":["java.lang.String"] }, 
+    {"name":"list","parameterTypes":["java.lang.String","com.google.cloud.storage.Storage$BlobListOption[]"] }, 
+    {"name":"list","parameterTypes":["com.google.cloud.storage.Storage$BucketListOption[]"] }, 
+    {"name":"listAcls","parameterTypes":["com.google.cloud.storage.BlobId"] }, 
+    {"name":"listAcls","parameterTypes":["java.lang.String"] }, 
+    {"name":"listAcls","parameterTypes":["java.lang.String","com.google.cloud.storage.Storage$BucketSourceOption[]"] }, 
+    {"name":"listDefaultAcls","parameterTypes":["java.lang.String"] }, 
+    {"name":"listHmacKeys","parameterTypes":["com.google.cloud.storage.Storage$ListHmacKeysOption[]"] }, 
+    {"name":"listNotifications","parameterTypes":["java.lang.String"] }, 
+    {"name":"lockRetentionPolicy","parameterTypes":["com.google.cloud.storage.BucketInfo","com.google.cloud.storage.Storage$BucketTargetOption[]"] }, 
+    {"name":"readAllBytes","parameterTypes":["com.google.cloud.storage.BlobId","com.google.cloud.storage.Storage$BlobSourceOption[]"] }, 
+    {"name":"readAllBytes","parameterTypes":["java.lang.String","java.lang.String","com.google.cloud.storage.Storage$BlobSourceOption[]"] }, 
+    {"name":"reader","parameterTypes":["com.google.cloud.storage.BlobId","com.google.cloud.storage.Storage$BlobSourceOption[]"] }, 
+    {"name":"reader","parameterTypes":["java.lang.String","java.lang.String","com.google.cloud.storage.Storage$BlobSourceOption[]"] }, 
+    {"name":"setIamPolicy","parameterTypes":["java.lang.String","com.google.cloud.Policy","com.google.cloud.storage.Storage$BucketSourceOption[]"] }, 
+    {"name":"signUrl","parameterTypes":["com.google.cloud.storage.BlobInfo","long","java.util.concurrent.TimeUnit","com.google.cloud.storage.Storage$SignUrlOption[]"] }, 
+    {"name":"testIamPermissions","parameterTypes":["java.lang.String","java.util.List","com.google.cloud.storage.Storage$BucketSourceOption[]"] }, 
+    {"name":"update","parameterTypes":["com.google.cloud.storage.BlobInfo"] }, 
+    {"name":"update","parameterTypes":["com.google.cloud.storage.BlobInfo","com.google.cloud.storage.Storage$BlobTargetOption[]"] }, 
+    {"name":"update","parameterTypes":["com.google.cloud.storage.BucketInfo","com.google.cloud.storage.Storage$BucketTargetOption[]"] }, 
+    {"name":"update","parameterTypes":["java.lang.Iterable"] }, 
+    {"name":"update","parameterTypes":["com.google.cloud.storage.BlobInfo[]"] }, 
+    {"name":"updateAcl","parameterTypes":["com.google.cloud.storage.BlobId","com.google.cloud.storage.Acl"] }, 
+    {"name":"updateAcl","parameterTypes":["java.lang.String","com.google.cloud.storage.Acl"] }, 
+    {"name":"updateAcl","parameterTypes":["java.lang.String","com.google.cloud.storage.Acl","com.google.cloud.storage.Storage$BucketSourceOption[]"] }, 
+    {"name":"updateDefaultAcl","parameterTypes":["java.lang.String","com.google.cloud.storage.Acl"] }, 
+    {"name":"updateHmacKeyState","parameterTypes":["com.google.cloud.storage.HmacKey$HmacKeyMetadata","com.google.cloud.storage.HmacKey$HmacKeyState","com.google.cloud.storage.Storage$UpdateHmacKeyOption[]"] }, 
+    {"name":"writer","parameterTypes":["com.google.cloud.storage.BlobInfo","com.google.cloud.storage.Storage$BlobWriteOption[]"] }, 
+    {"name":"writer","parameterTypes":["java.net.URL"] }
+  ]
+},
+{
+  "name":"com.google.common.util.concurrent.AbstractFuture",
+  "fields":[
+    {"name":"listeners", "allowUnsafeAccess":true}, 
+    {"name":"value", "allowUnsafeAccess":true}, 
+    {"name":"waiters", "allowUnsafeAccess":true}
+  ]
+},
+{
+  "name":"com.google.common.util.concurrent.AbstractFuture$Waiter",
+  "fields":[
+    {"name":"next", "allowUnsafeAccess":true}, 
+    {"name":"thread", "allowUnsafeAccess":true}
+  ]
+},
+{
+  "name":"com.google.gson.Gson",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true
+},
+{
+  "name":"com.google.gson.GsonBuilder",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true
 },
 {
   "name":"com.sun.crypto.provider.AESCipher$General",
@@ -237,10 +537,6 @@
 },
 {
   "name":"com.sun.org.apache.xalan.internal.xsltc.trax.TransformerFactoryImpl",
-  "methods":[{"name":"<init>","parameterTypes":[] }]
-},
-{
-  "name":"com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl",
   "methods":[{"name":"<init>","parameterTypes":[] }]
 },
 {
@@ -290,8 +586,12 @@
 },
 {
   "name":"java.lang.Object",
+  "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allPublicMethods":true
+},
+{
+  "name":"java.lang.Object[]"
 },
 {
   "name":"java.lang.Runtime",
@@ -438,6 +738,13 @@
   "name":"java.security.interfaces.RSAPublicKey"
 },
 {
+  "name":"java.sql.Date"
+},
+{
+  "name":"java.util.AbstractMap",
+  "allDeclaredFields":true
+},
+{
   "name":"java.util.Date"
 },
 {
@@ -469,7 +776,6 @@
 },
 {
   "name":"java.util.function.Function",
-  "allDeclaredMethods":true,
   "allPublicMethods":true
 },
 {
@@ -798,6 +1104,7 @@
 },
 {
   "name":"org.springframework.beans.factory.config.BeanFactoryPostProcessor",
+  "allDeclaredMethods":true,
   "allPublicMethods":true
 },
 {
@@ -1019,10 +1326,39 @@
   "methods":[{"name":"<init>","parameterTypes":[] }]
 },
 {
-  "name":"org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration"
+  "name":"org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true,
+  "allDeclaredConstructors":true
 },
 {
-  "name":"org.springframework.boot.autoconfigure.http.GsonHttpMessageConvertersConfiguration"
+  "name":"org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration$StandardGsonBuilderCustomizer",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true
+},
+{
+  "name":"org.springframework.boot.autoconfigure.gson.GsonBuilderCustomizer",
+  "allPublicMethods":true
+},
+{
+  "name":"org.springframework.boot.autoconfigure.gson.GsonProperties",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true,
+  "allDeclaredConstructors":true
+},
+{
+  "name":"org.springframework.boot.autoconfigure.http.GsonHttpMessageConvertersConfiguration",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true,
+  "allDeclaredConstructors":true
+},
+{
+  "name":"org.springframework.boot.autoconfigure.http.GsonHttpMessageConvertersConfiguration$JacksonAndJsonbUnavailableCondition",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.springframework.boot.autoconfigure.http.GsonHttpMessageConvertersConfiguration$PreferGsonOrJacksonAndJsonbUnavailableCondition",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
 },
 {
   "name":"org.springframework.boot.autoconfigure.http.HttpMessageConverters",
@@ -1511,6 +1847,10 @@
   "name":"org.springframework.boot.context.config.ConfigDataLocation[]"
 },
 {
+  "name":"org.springframework.boot.context.config.ConfigDataProperties",
+  "allDeclaredConstructors":true
+},
+{
   "name":"org.springframework.boot.context.config.ConfigTreeConfigDataLoader",
   "allDeclaredConstructors":true
 },
@@ -1574,6 +1914,10 @@
 },
 {
   "name":"org.springframework.boot.context.properties.NestedConfigurationProperty",
+  "allDeclaredMethods":true
+},
+{
+  "name":"org.springframework.boot.context.properties.bind.Name",
   "allDeclaredMethods":true
 },
 {
@@ -1684,7 +2028,7 @@
   "allPublicMethods":true
 },
 {
-  "name":"org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter$$Lambda$556/0x0000000800f25350",
+  "name":"org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter$$Lambda$570/0x0000000800f73680",
   "allDeclaredFields":true,
   "allDeclaredMethods":true
 },
@@ -2233,6 +2577,11 @@
 },
 {
   "name":"org.springframework.core.env.EnvironmentCapable",
+  "allPublicMethods":true
+},
+{
+  "name":"org.springframework.core.io.ProtocolResolver",
+  "allDeclaredMethods":true,
   "allPublicMethods":true
 },
 {
@@ -3006,7 +3355,7 @@
 },
 {
   "name":"sun.misc.Unsafe",
-  "fields":[{"name":"theUnsafe"}]
+  "allDeclaredFields":true
 },
 {
   "name":"sun.security.pkcs.SignerInfo[]"
@@ -3037,6 +3386,10 @@
 },
 {
   "name":"sun.security.provider.JavaKeyStore$JKS",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"sun.security.provider.MD5",
   "methods":[{"name":"<init>","parameterTypes":[] }]
 },
 {

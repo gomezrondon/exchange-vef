@@ -5,6 +5,9 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 public class ImageService {
 
@@ -50,51 +53,6 @@ public class ImageService {
 
 
     /***
-     * Scale an image
-     * @param imageName image name
-     * @param newName name of the copy scaled.
-     */
-/*    public static void scaleImage(String imageName, String newName) {
-        BufferedImage img = getBufferedImage(imageName);
-        int width = (int) (img.getWidth() * 1.5);
-        int height = (int) (img.getHeight() * 1.5);
-        BufferedImage scaledImage = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
-        scaledImage.getGraphics().drawImage(img, 0, 0, width, height, null);
-        saveBufferdImage(newName, scaledImage);
-    }*/
-
-    /***
-     * convert an image to grayscale
-     * @param imageName image name
-     * @param newName name of the copy gray.
-     */
-/*
-    public static void toGrayScale(String imageName, String newName) {
-        BufferedImage img = getBufferedImage(imageName);
-        BufferedImage grayScaleImage = new BufferedImage(img.getWidth(), img.getHeight(), BufferedImage.TYPE_BYTE_GRAY);
-        grayScaleImage.getGraphics().drawImage(img, 0, 0, null);
-        saveBufferdImage(newName, grayScaleImage);
-    }
-*/
-
-
-    /***
-     * convert a image to BufferedImage
-     * @param imageName file name
-     * @return BufferedImage of the file
-     */
-    private static BufferedImage getBufferedImage(String imageName) {
-        BufferedImage img = null;
-        try {
-            img = ImageIO.read(new File(imageName));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return img;
-    }
-
-
-    /***
      * save a BufferedImage to file image
      * @param newName file name
      * @param img is BufferedImage to be saved to file as a jpg
@@ -105,6 +63,32 @@ public class ImageService {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+
+    public static void writeToFile(String fileName, String data) {
+        Path path = Paths.get(fileName);
+        byte[] strToBytes = data.getBytes();
+
+        try {
+            System.out.println("Saving data to file: "+path.getFileName());
+            Files.write(path, strToBytes);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public static String readFile(String fileName) {
+        Path path = Paths.get(fileName);
+        String data = "";
+        if (path.toFile().exists()) {
+            try {
+                data= Files.readString(path);
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        }
+        return data.trim();
     }
 
 

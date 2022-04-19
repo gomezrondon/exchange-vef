@@ -4,3 +4,14 @@
 ###
 
 GET http://localhost:8080/getBsFDolarToday
+
+###
+
+
+GET http://localhost:8080/getText
+
+###
+
+ GET http://localhost:8080/getTime
+
+###
